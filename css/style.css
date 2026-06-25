@@ -5,7 +5,7 @@ thuoc-tinh: gia-tri;
 /* Ví dụ thực tế */
 body {
 font-family: Arial, sans-serif; /* Font chữ */
-background-color: lch(91.49% 5.13 43.27); /* Màu nền */
+background-color: lch(88.32% 14.8 42.86); /* Màu nền */
 margin: 0;
 padding: 20px;
 }
@@ -26,5 +26,4 @@ mảgin-top: 30px;
 border-bottom: 2px solid #0f1110; /* Đường viền dưới */
 }
 a:hover {
-    color:crimson
-}
+    color:rgba(206, 9, 98, 0.912)
