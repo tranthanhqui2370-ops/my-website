@@ -19,4 +19,4 @@ Liên hệ: các cách thức có thể liên hệ
 Github: dùng để chứa dự án
 
 Tác giả
-Võ Ngọc Viên.
+Trần Thanh Quý.
