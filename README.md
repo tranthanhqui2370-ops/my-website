@@ -1,16 +1,22 @@
-Trần Thanh Quý
-Sinh viên GDU
-Quê quán:Huế
+Dự án: Học lập trình website trên VS Code
 
-Ngành:Công nghệ Thông tin
+Với cấu trúc dự án:
+My-website
+index.html
+contact.html
+about.html
+css
+style.css
+images
+js
 
-Năm học:2025-2026
+Mô tả:
+Website dùng để giới thiệu về bản thân
+Với 4 trang được liên kết với nhau
+Trang chủ: dùng để giới thiệu cơ bản
+Giới thiệu: giới thiệu chi tiết hơn
+Liên hệ: các cách thức có thể liên hệ
+Github: dùng để chứa dự án
 
-Sở Thích
-Đọc sách
-Nghe nhạc
-Chơi game
-Mục tiêu học kỳ này
-Không rớt môn nào
-Đạt điểm trung bình các môn trên 8.0
-tham gia các hoạt động
+Tác giả
+Võ Ngọc Viên.
