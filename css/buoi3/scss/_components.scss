@@ -1,0 +1,21 @@
+@mixin card-style{
+
+    background:white;
+
+    padding:24px;
+
+    border-radius:$border-radius;
+
+    box-shadow:$shadow;
+
+}
+
+@mixin flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}

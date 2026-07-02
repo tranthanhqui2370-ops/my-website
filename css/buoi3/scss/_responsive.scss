@@ -1,0 +1,39 @@
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+}
+
+.cards-grid{
+
+    flex-direction:column;
+
+}
+
+.page-layout{
+
+    grid-template-columns:1fr;
+
+    grid-template-areas:
+
+    "header"
+
+    "main"
+
+    "sidebar"
+
+    "footer";
+
+}
+
+}

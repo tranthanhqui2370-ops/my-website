@@ -1,0 +1,369 @@
+/* ==========================================
+   RESET CSS
+========================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #fff3d6;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+header {
+    background: #f8bd29;
+    color: white;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f761;
+    padding: 16px 32px;
+}
+
+.logo h1 {
+    color: black;
+}
+
+.nav-links a {
+    color: #ff2f2f;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: rgb(249, 4, 4);
+}
+
+/* ==========================================
+   HERO
+========================================== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    background: #eef077;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h2 {
+    margin-bottom: 16px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #ffe98a;
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 32px 16px;
+}
+
+/* ==========================================
+   CARDS GRID
+========================================== */
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   HIGHLIGHT
+========================================== */
+.highlight {
+    background: #fef3c7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* ==========================================
+   PAGE LAYOUT
+========================================== */
+.page-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "main";
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 32px 16px;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+.sidebar {
+    grid-area: sidebar;
+    display: none;
+    background: #d7a424;
+    padding: 24px;
+    border-radius: 8px;
+    align-self: start;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover {
+    color: red;
+}
+
+/* ==========================================
+   MAIN GRID AREA
+========================================== */
+main {
+    grid-area: main;
+}
+
+/* ==========================================
+   SKILLS GRID
+========================================== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: rgb(253,219,50);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    background: #f8bd29;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ebca14;
+    color: black;
+    padding: 24px 32px;
+}
+
+footer a {
+    color: red;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+/* Mobile */
+@media (max-width:767px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav-links a{
+        margin:8px 0;
+    }
+
+    .page-layout{
+        grid-template-columns:1fr;
+        grid-template-areas:"main";
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:12px;
+        text-align:center;
+    }
+}
+
+/* Tablet */
+@media (min-width:768px){
+
+    .page-layout{
+        grid-template-columns:220px 1fr;
+        grid-template-areas:"sidebar main";
+    }
+
+    .sidebar{
+        display:block;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:1024px){
+
+    .page-layout{
+        grid-template-columns:240px 1fr;
+    }
+
+}
+
+/* Landscape */
+@media (orientation:landscape) and (max-width:768px){
+
+    .hero{
+        min-height:220px;
+    }
+
+}
+/* ==========================================
+   LANDSCAPE MODE
+========================================== */
+
+@media (orientation: landscape) and (max-width: 768px) {
+
+    .hero {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+    }
+
+}

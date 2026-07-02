@@ -5,7 +5,11 @@
     <meta name="description"
       content="Khám phá thông tin cá nhân, sở thích, mục tiêu học tập và hành trình phát triển của sinh viên Trần Thanh Quý tại GDU.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font: Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta property="og:title" content="Trần Thanh Quý - Trang chủ sơ lược bản thân">
     <meta property="og:description"
           content="Website giới thiệu thông tin cá nhân, sở thích và mục tiêu học tập của sinh viên Trần Thanh Quý tại GDU.">
@@ -16,10 +20,12 @@
 </head>
 <body>
     <header>
+        <div class="navbar">
         <h1><strong>Trần Thanh Quý</strong></h1>
+        <div cladd="logo">
         <p>Sinh viên GDU</p>
-    </header>
-    <nav>
+        </div>
+    <nav class="nav-link">
         <a href="index.html">Trang chủ</a> |
         <a href="about.html">Giới thiệu</a> |
         <a href="contact.html">Liên hệ</a> |
@@ -29,13 +35,30 @@
        GitHub
     </a>
     </nav>
+        </div>
+    </header>
+   <section class="hero">
+
+    <h2>Xin chào, mình là Trần Thanh Quý</h2>
+
+    <p>Chào mừng bạn đến với website giới thiệu bản thân.</p>
+
+    <a href="about.html" class="btn-primary">
+        Tìm hiểu thêm
+    </a>
+
+</section>
     <main>
+         <div class="cards-grid">
+        <div class="card">
         <section>
             <h2>Thông tin cá nhân</h2>
             <p>Quê quán: Huế</p>
             <p>Ngành: Công nghệ Thông tin</p>
             <p>Năm học: 2025-2026</p>
         </section>
+        </div>
+        <div class="card">
         <section>
             <h2>Sở thích</h2>
             <ul>
@@ -43,6 +66,10 @@
                 <li>Nghe nhạc</li>
                 <li>Chơi game</li>
             </ul>
+        </section>
+        </div>
+        <div class="card">
+        <section>
             <h2>Mục tiêu học kỳ này</h2>
             <ol>
                 <li><a href="http://127.0.0.1:5500/index.html">Không rớt môn nào</a></li>
@@ -51,10 +78,11 @@
                  
             </ol>
         </section>
+        </div>
+        </div>
     </main>
     <footer>
-      
-
+          <div class="footer-left">
     <address>
         Email:
         <a href="mailto:quy@example.com">quy@example.com</a><br>
@@ -62,14 +90,16 @@
         Điện thoại:
         <a href="tel:0123456789">0123456789</a>
     </address>
-
+          </div>
+           <div class="footer-right">
     <p>
         Cập nhật:
         <time datetime="2026-06-01">01/06/2026</time>
     </p>
-
+    </div>
+    <div class="footer-right">
     <p>&copy; 2026 Trần Thanh Quý</p>
-
+        </div>
 </footer>
 </body>
 </html>

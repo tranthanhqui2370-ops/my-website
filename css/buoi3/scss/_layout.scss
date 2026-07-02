@@ -1,0 +1,130 @@
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:$color-primary;
+
+    color:white;
+
+    padding:$spacing calc($spacing * 2);
+
+}
+
+nav{
+
+    @include flex-center;
+
+    gap:20px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+nav a:hover{
+
+    color:#ffd966;
+
+}
+
+main{
+
+    max-width:800px;
+
+    margin:0 auto;
+
+    padding:32px 16px;
+
+}
+
+.hero{
+
+    @include flex-center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    min-height:300px;
+
+}
+
+.cards-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+}
+
+.card{
+
+    @include card-style;
+
+    flex:1;
+
+    min-width:250px;
+
+}
+
+.page-layout{
+
+    display:grid;
+
+    min-height:100vh;
+
+    grid-template-columns:220px 1fr;
+
+    grid-template-rows:auto 1fr auto;
+
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+}
+
+.sidebar{
+
+    grid-area:sidebar;
+
+    background:#f11519;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+
+    gap:16px;
+
+}
+
+footer{
+
+    background:$color-primary;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
